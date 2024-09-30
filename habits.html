@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PeakTask | Habits</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+
+    <!-- Sidebar-->
+    <div id="sidebar" class="fixed top-[4rem] left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 z-50">
+      
+      <div class="p-4">
+        
+        <ul class="mt-6 space-y-4">
+          <li><a href="#" class="hover:underline">Overview</a></li>
+          <li><a href="#" class="hover:underline">Daily Routine</a></li>
+          <li><a href="#" class="hover:underline">Focus Timer</a></li>
+          <li><a href="#" class="hover:underline">Analytics</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header Content-->
+    <div id="header" class="flex justify-between items-center h-16">
+      <div class="flex items-center space-x-4">
+      
+        <button id="toggleButton" class="ml-2 px-2 py-1 text-white bg-blue-900 rounded focus:outline-none">
+         
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <span class="text-4xl font-bold text-blue-900"
+          >Peak <span class="text-black">Task</span></span
+        >
+      </div>
+      <div id="navbar" class="flex justify-end text-black p-2 space-x-5">
+        <a href="index.html"> <div class="cursor-pointer">Overview</div> </a>
+        <a href="routine.html"><div class="cursor-pointer">Routine Manager</div></a>
+        <a href="focus.html"><div class="cursor-pointer">Focus Timer</div></a>
+        <a href="habits.html"><div class="cursor-pointer text-white rounded-full p-0.5 bg-blue-900">Habits</div></a>
+        <a href="analytics.html"><div class="cursor-pointer">Analytics</div></a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main" class="flex">
+      <div class="w-1/4 bg-yellow-900">2</div>
+      <div class="w-1/2 bg-blue-900">1</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
